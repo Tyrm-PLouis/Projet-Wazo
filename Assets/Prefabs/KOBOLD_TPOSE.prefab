@@ -2105,6 +2105,75 @@ Transform:
   m_Father: {fileID: 7146317640496761311}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5410823842135109884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6756165975837797438}
+  - component: {fileID: 2493815147620698375}
+  - component: {fileID: 7592486054024492497}
+  m_Layer: 0
+  m_Name: Aggro_range
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6756165975837797438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5410823842135109884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.176, z: 0.482}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7157365879631527117}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2493815147620698375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5410823842135109884}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 1.3, z: 2.5}
+  m_Center: {x: 0, y: 0, z: 0.7019868}
+--- !u!114 &7592486054024492497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5410823842135109884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d133d18f64df2d94399afe639aba19b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aggro: {fileID: 7592486054024492497}
+  _kobold: {fileID: 5321426781361559774}
+  Player: {fileID: 9081985449281671957, guid: b7092e832e15fa54f862d1825d541141, type: 3}
 --- !u!1 &5540311232690659357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,6 +3051,7 @@ GameObject:
   - component: {fileID: -4664281194301595869}
   - component: {fileID: -2528509408018206151}
   - component: {fileID: 1990008749688964304}
+  - component: {fileID: 5321426781361559774}
   m_Layer: 0
   m_Name: KOBOLD_TPOSE
   m_TagString: Untagged
@@ -3004,6 +3074,7 @@ Transform:
   - {fileID: 6000615636480471215}
   - {fileID: 6978831126913472127}
   - {fileID: 1484399529613045614}
+  - {fileID: 6756165975837797438}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3092,6 +3163,19 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &5321426781361559774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8545106394929748790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaa6b631cac2b54d8fb524da10ebea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &8563414311802657137
 GameObject:
   m_ObjectHideFlags: 0
