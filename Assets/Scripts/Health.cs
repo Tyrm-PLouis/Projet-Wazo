@@ -43,7 +43,6 @@ public class Health : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision!");
         if (gameObject.tag == "Player")
         {
             if (collision.collider.gameObject.CompareTag("Sword"))

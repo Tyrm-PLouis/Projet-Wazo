@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Range_Collider : MonoBehaviour
 {
-    public Range_Collider _aggro;
     public Kobold _kobold;
     public Transform Player;
     private void Start()
@@ -12,7 +11,7 @@ public class Range_Collider : MonoBehaviour
 
     private void Update()
     {
-
+        Aggro();
     }
 
     private void OnTriggerStay(Collider other)
@@ -44,7 +43,7 @@ public class Range_Collider : MonoBehaviour
     {
         if (PlayerInSight())
         {
-            if (Vector3.Distance(transform.position, Player.position) < 1f)
+            if (Vector3.Distance(transform.position, Player.position) < 100f)
             {
                 MoveToPlayer();
             }

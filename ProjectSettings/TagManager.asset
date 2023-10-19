@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ennemy
   - Sword
+  - Gem
+  - Wazo
+  - Voice_Sword
   layers:
   - Default
   - TransparentFX
